@@ -75,7 +75,7 @@ void Fraction::set(int inNum, int inDenom) {
 
 /*
  Definition of class function addedTo. Function passes in a fraction object, and adds it to
- the existing fraction object.
+ the calling object.
  
  Pre: None
  Post: Returns a fraction object (not reduced) with the sum of the two fractions
@@ -97,7 +97,7 @@ Fraction Fraction::addedTo(Fraction frac) {
 
 /*
  Definition of class function subtract. Function passes in a fraction object, and subtracts
- it from the existing fraction object.
+ it from the calling object.
  
  Pre: None
  Post: Returns a fraction object (not reduced) with the difference of the two fractions
@@ -119,7 +119,7 @@ Fraction Fraction::subtract(Fraction frac) {
 
 /*
  Definition of class function multipliedBy. Function passes in a fraction object, and
- multiplies it to the existing fraction object.
+ multiplies it to calling object.
  
  Pre: None
  Post: Returns a fraction object (not reduced) with the product of the two fractions
@@ -138,8 +138,8 @@ Fraction Fraction::multipliedBy(Fraction frac) {
 
 
 /*
- Definition of class function dividedBy. Function passes in a fraction object, and returns
- the quotient with existing fraction object.
+ Definition of class function dividedBy. Function passes in a fraction object, divides the
+ calling object by the fraction object passed in and returns the quotient.
  
  Pre: None
  Post: Returns a fraction object (not reduced) with the quotient of the two fractions
@@ -159,7 +159,7 @@ Fraction Fraction::dividedBy(Fraction frac) {
 
 /*
  Definition of class function isEqualTo. Function passes in a fraction object, compares it
- to the existing fraction object and returns whether the two fractions are equal.
+ to the calling object and returns whether the two fractions are equal.
  
  Pre: None
  Post: Returns true if two fractions are equal and false otherwise
@@ -179,7 +179,7 @@ bool Fraction::isEqualTo(Fraction frac) {
  fraction format.
  
  Pre: None
- Post: Displays the numerator and denominator of the fraction object in fraction format
+ Post: Displays the numerator and denominator of the calling object in fraction format
  */
 
 void Fraction::print() {
